@@ -1,0 +1,3 @@
+C:/Users/recke/IdeaProjects/School/prg-ob/Statki/cmake-build-debug/CMakeFiles/Statki.dir
+C:/Users/recke/IdeaProjects/School/prg-ob/Statki/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/recke/IdeaProjects/School/prg-ob/Statki/cmake-build-debug/CMakeFiles/rebuild_cache.dir
