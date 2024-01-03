@@ -21,6 +21,7 @@ public:
     Board(int w,int h);
     void init();
     void print_board();
+    void Savetxt();
     std::vector<std::vector<char>> matrix;
 };
 

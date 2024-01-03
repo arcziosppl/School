@@ -61,6 +61,12 @@ build CMakeFiles/Statki.dir/Board/Board.cpp.obj: CXX_COMPILER__Statki_unscanned_
   OBJECT_DIR = CMakeFiles\Statki.dir
   OBJECT_FILE_DIR = CMakeFiles\Statki.dir\Board
 
+build CMakeFiles/Statki.dir/Utils/Utils.cpp.obj: CXX_COMPILER__Statki_unscanned_Debug C$:/Users/recke/IdeaProjects/School/prg-ob/Statki/Utils/Utils.cpp || cmake_object_order_depends_target_Statki
+  DEP_FILE = CMakeFiles\Statki.dir\Utils\Utils.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Statki.dir
+  OBJECT_FILE_DIR = CMakeFiles\Statki.dir\Utils
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Statki
@@ -69,7 +75,7 @@ build CMakeFiles/Statki.dir/Board/Board.cpp.obj: CXX_COMPILER__Statki_unscanned_
 #############################################
 # Link the executable Statki.exe
 
-build Statki.exe: CXX_EXECUTABLE_LINKER__Statki_Debug CMakeFiles/Statki.dir/main.cpp.obj CMakeFiles/Statki.dir/Board/Board.cpp.obj
+build Statki.exe: CXX_EXECUTABLE_LINKER__Statki_Debug CMakeFiles/Statki.dir/main.cpp.obj CMakeFiles/Statki.dir/Board/Board.cpp.obj CMakeFiles/Statki.dir/Utils/Utils.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Statki.dir
