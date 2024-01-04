@@ -6,9 +6,12 @@
 #define STATKI_UTILS_H
 #include "iostream"
 #include "ctime"
+#include "vector"
 class Utils {
 public:
     static std::string GetCurrentDate();
+    static int *GenerateRandom(int max, int amount);
+    static void WelocmeAscii();
 };
 
 
