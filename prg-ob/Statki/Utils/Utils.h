@@ -9,6 +9,7 @@
 #include "vector"
 #include "fstream"
 #include "string"
+#include "algorithm"
 
 
 class Utils {
@@ -17,6 +18,7 @@ public:
     static std::vector<int> GenerateRandom(int max,int dm);
     static void SaveToTxt(std::vector<std::vector<char>> matrix, int d);
     static void SaveCordsToTxt(int x, int y);
+    static std::vector<std::vector<int>> ReadSavedUserCords();
     static void WelocmeAscii();
 };
 

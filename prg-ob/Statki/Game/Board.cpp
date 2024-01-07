@@ -49,11 +49,19 @@ void Board::print_board_hidden() {
 }
 
 void Board::ShipsGenerate() {
-
+    srand(time(nullptr));
     enemy_ships_number = ship.num_ships;
 
     std::vector<int> arr = Utils::GenerateRandom(ship.num_ships, config.d);
     std::vector<int> arr_2 = arr;
+    std::vector<std::vector<int>> data = Utils::ReadSavedUserCords();
+
+//    for (int i = 0; i < data.size(); ++i) {
+//        for (int j = 0; j < data[i].size(); ++j) {
+//            std::cout << data[i][j] << " ";
+//        }
+//        std::cout << "\n";
+//    }
 
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -64,8 +72,15 @@ void Board::ShipsGenerate() {
         int rand_x = arr[i];
         int rand_y = arr_2[i];
 
+//        for (int j = 0; j < data.size(); ++j) {
+//            if(rand_x == data[j][0]){
+//                std::cout<<"tre";
+//            }
+//        }
+
         matrix_hidden[rand_x][rand_y] = ship.ship_symbol;
     }
+
 }
 
 void Board::TakeTheShot(const std::string& cord) {

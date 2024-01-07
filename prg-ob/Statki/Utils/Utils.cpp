@@ -82,3 +82,27 @@ void Utils::SaveCordsToTxt(int x, int y){
     file.close();
 }
 
+std::vector<std::vector<int>> Utils::ReadSavedUserCords() {
+    std::fstream file;
+    std::string buffer;
+    std::vector<std::vector<int>> data;
+
+    file.open(R"(C:\Users\recke\IdeaProjects\School\prg-ob\Statki\Saved\Cords.txt)", std::ios::in);
+
+    if (file.is_open()){
+        while (std::getline(file,buffer)){
+            std::string x = buffer.substr(0,1);
+            std::string y;
+            if(buffer.length() == 2) {
+                 y = buffer.substr(1, 2);
+            } else{
+                 y = buffer.substr(1, 3);
+            }
+            data.push_back({std::stoi(x),std::stoi(y)});
+        }
+        std::reverse(data.begin(), data.end());
+    }
+
+    return data;
+}
+
