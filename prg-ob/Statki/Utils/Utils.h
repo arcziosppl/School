@@ -7,10 +7,14 @@
 #include "iostream"
 #include "ctime"
 #include "vector"
+#include "fstream"
+
+
 class Utils {
 public:
     static std::string GetCurrentDate();
-    static int *GenerateRandom(int max, int amount);
+    static std::vector<int> GenerateRandom(int max,int dm);
+    static void SaveToTxt(std::vector<std::vector<char>> matrix, int d);
     static void WelocmeAscii();
 };
 

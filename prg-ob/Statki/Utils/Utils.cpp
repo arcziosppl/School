@@ -10,15 +10,15 @@ std::string Utils::GetCurrentDate(){
     return  dt;
 }
 
-int *Utils::GenerateRandom(int max, int amount) {
+std::vector<int> Utils::GenerateRandom(int max, int dm) {
     srand(time(nullptr));
-    int *value = new int[amount];
+    std::vector<int> value(max);
 
-    for (int i=0;i<amount;i++){
+    for (int i=0;i<max;i++){
         bool check;
         int n;
         do{
-            n=rand()%max;
+            n=rand()%dm;
             check=true;
             for (int j=0;j<i;j++) {
                 if (n == value[j]) {
@@ -52,3 +52,26 @@ std::cout<<"     ~~^^      ~^^~     ~^~ ~^ ~^"<<'\n'<<'\t';
 std::cout<<"          ~^~~        ~~~^^~"<<'\n'<<'\t';
 std::cout<<'\n';
 }
+
+void Utils::SaveToTxt(std::vector<std::vector<char>> matrix, int d) {
+    std::string column_name[10] = {"A","B","C","D","E","F","G","H","I","J"};
+
+    std::ofstream file;
+    file.open(R"(C:\Users\recke\IdeaProjects\School\prg-ob\Statki\Saved\Saved.txt)", std::ios_base::app);
+    file<<Utils::GetCurrentDate();
+    file<<'\n';
+    for (int i = 0; i < d; i++) {
+        file<<'\t'<<column_name[i];
+    }
+    file<<'\n';
+    for(int i=0;i<matrix.size();i++){
+        file<<(i + 1);
+        for(char j : matrix[i]) {
+            file << '\t' << j;
+        }
+        file<<'\n';
+    }
+    file<<'\n';
+    file.close();
+}
+

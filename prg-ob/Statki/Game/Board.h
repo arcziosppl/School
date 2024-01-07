@@ -12,10 +12,10 @@
 
 class Board {
 private:
+
     struct {
-        int w;
-        int h;
-    }size{};
+        int d;
+    }config{};
     struct {
         int num_ships;
         char ship_symbol;
@@ -24,16 +24,16 @@ private:
     std::string column_name[10] = {"A","B","C","D","E","F","G","H","I","J"};
 
 public:
-    Board(int w, int h, int s_num, char symbol);
     void init();
     void print_board();
     void print_board_hidden();
-    void Savetxt();
-    void Shoot(const std::string& cord);
+    void TakeTheShot(const std::string& cord);
     void ShipsGenerate();
     std::vector<std::vector<char>> matrix;
     std::vector<std::vector<char>> matrix_hidden;
-    int bot_ships_number = 10;
+    int enemy_ships_number = 0;
+
+    Board(int d, int num_ships, char ship_symbol);
 };
 
 
