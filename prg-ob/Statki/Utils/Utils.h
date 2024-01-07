@@ -8,6 +8,7 @@
 #include "ctime"
 #include "vector"
 #include "fstream"
+#include "string"
 
 
 class Utils {
@@ -15,6 +16,7 @@ public:
     static std::string GetCurrentDate();
     static std::vector<int> GenerateRandom(int max,int dm);
     static void SaveToTxt(std::vector<std::vector<char>> matrix, int d);
+    static void SaveCordsToTxt(int x, int y);
     static void WelocmeAscii();
 };
 

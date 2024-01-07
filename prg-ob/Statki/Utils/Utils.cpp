@@ -57,7 +57,7 @@ void Utils::SaveToTxt(std::vector<std::vector<char>> matrix, int d) {
     std::string column_name[10] = {"A","B","C","D","E","F","G","H","I","J"};
 
     std::ofstream file;
-    file.open(R"(C:\Users\recke\IdeaProjects\School\prg-ob\Statki\Saved\Saved.txt)", std::ios_base::app);
+    file.open(R"(C:\Users\recke\IdeaProjects\School\prg-ob\Statki\Saved\Saved.txt)", std::ios::app);
     file<<Utils::GetCurrentDate();
     file<<'\n';
     for (int i = 0; i < d; i++) {
@@ -72,6 +72,13 @@ void Utils::SaveToTxt(std::vector<std::vector<char>> matrix, int d) {
         file<<'\n';
     }
     file<<'\n';
+    file.close();
+}
+
+void Utils::SaveCordsToTxt(int x, int y){
+  std::ofstream file;
+    file.open(R"(C:\Users\recke\IdeaProjects\School\prg-ob\Statki\Saved\Cords.txt)", std::ios::app);
+    file<<x<<y<<'\n';
     file.close();
 }
 

@@ -4,8 +4,8 @@
 #include "Game/Player.h"
 #include "clocale"
 
-#define MATRIX_SIZE 5
-#define NUMBER_OF_SHIPS 1
+#define MATRIX_SIZE 10
+#define NUMBER_OF_SHIPS 10
 #define SHIP_SYMBOL '|'
 
 Board GameBoard(MATRIX_SIZE,NUMBER_OF_SHIPS,SHIP_SYMBOL);
