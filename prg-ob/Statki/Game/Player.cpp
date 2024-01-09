@@ -4,11 +4,11 @@
 
 #include "Player.h"
 
-Player::Player(int d) {
+Player::Player(const int d) {
     this->matrix_size = d;
 }
 
-std::string Player::GetCords() {
+std::string Player::GetCords() const {
     bool failed = true;
     std::string cord;
     std::cout<<"Podaj koordynaty salwy: ";

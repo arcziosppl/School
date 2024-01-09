@@ -25,13 +25,19 @@ private:
 
 public:
     void init();
-    void print_board();
-    void print_board_hidden();
+    void print_board() const;
+    void print_board_hidden() const;
+    void PrintBoardPlayerH() const;
     void TakeTheShot(const std::string& cord);
+    void TakeTheShotPc(const std::vector<int>& arr);
     void ShipsGenerate();
+    void ShipsGeneratePlayerH();
     std::vector<std::vector<char>> matrix;
     std::vector<std::vector<char>> matrix_hidden;
+    std::vector<std::vector<char>> matrix_player_h;
+    std::vector<std::vector<char>> matrix_hidden_player_h;
     int enemy_ships_number = 0;
+    int player_ships_number = 0;
 
     Board(int d, int num_ships, char ship_symbol);
 };

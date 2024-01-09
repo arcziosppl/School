@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.27)
+cmake_minimum_required(VERSION 3.26.4)
 project(Statki)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -10,4 +10,6 @@ add_executable(Statki
         Utils/Utils.cpp
         Utils/Utils.h
         Game/Player.cpp
-        Game/Player.h)
+        Game/Player.h
+        Game/PlayerPc.cpp
+        Game/PlayerPc.h)

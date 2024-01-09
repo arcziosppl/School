@@ -14,7 +14,7 @@ private:
 
 public:
     Player(int d);
-    std::string GetCords();
+    std::string GetCords() const;
     std::string cords;
 };
 

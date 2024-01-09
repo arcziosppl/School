@@ -57,7 +57,7 @@ void Utils::SaveToTxt(std::vector<std::vector<char>> matrix, int d) {
     std::string column_name[10] = {"A","B","C","D","E","F","G","H","I","J"};
 
     std::ofstream file;
-    file.open(R"(C:\Users\recke\IdeaProjects\School\prg-ob\Statki\Saved\Saved.txt)", std::ios::app);
+    file.open(R"(/home/arczi/CLionProjects/School/prg-ob/Statki/Saved/Saved.txt)", std::ios::app);
     file<<Utils::GetCurrentDate();
     file<<'\n';
     for (int i = 0; i < d; i++) {
@@ -77,7 +77,7 @@ void Utils::SaveToTxt(std::vector<std::vector<char>> matrix, int d) {
 
 void Utils::SaveCordsToTxt(int x, int y){
   std::ofstream file;
-    file.open(R"(C:\Users\recke\IdeaProjects\School\prg-ob\Statki\Saved\Cords.txt)", std::ios::app);
+    file.open(R"(/home/arczi/CLionProjects/School/prg-ob/Statki/Saved/Cords.txt)", std::ios::app);
     file<<x<<y<<'\n';
     file.close();
 }
@@ -87,7 +87,7 @@ std::vector<std::vector<int>> Utils::ReadSavedUserCords() {
     std::string buffer;
     std::vector<std::vector<int>> data;
 
-    file.open(R"(C:\Users\recke\IdeaProjects\School\prg-ob\Statki\Saved\Cords.txt)", std::ios::in);
+    file.open(R"(/home/arczi/CLionProjects/School/prg-ob/Statki/Saved/Cords.txt)", std::ios::in);
 
     if (file.is_open()){
         while (std::getline(file,buffer)){
