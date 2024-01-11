@@ -19,21 +19,22 @@ int main() {
     GameBoard.init();
     GameBoard.ShipsGenerate();
     GameBoard.ShipsGeneratePlayerH();
+    std::cout<<GameBoard.GameWin();
+
     Utils::WelocmeAscii();
-    while (GameBoard.enemy_ships_number != 0){
+    while (GameBoard.GameWin() != 1 && GameBoard.GameWin() != 2){
         GameBoard.print_board();
-        //GameBoard.print_board_hidden();
+        GameBoard.print_board_hidden();
         GameBoard.PrintBoardPlayerH();
         GameBoard.TakeTheShot(player.GetCords());
         GameBoard.TakeTheShotPc(player_pc.GenerateCordsToShoot());
-
-        if (GameBoard.player_ships_number == 0) {
-            std::cout<<"Przegrałeś";
-            exit(0);
-        }
     }
     Utils::SaveToTxt(GameBoard.matrix, MATRIX_SIZE);
-    std::cout<<"Gratulacje wygrałeś"<<'\n';
+    if(GameBoard.GameWin() == 1) {
+        std::cout<<"Niestety przegrałeś";
+    }else {
+        std::cout<<"Gratulacje, Wygrałeś";
+    }
 
     return 0;
 }

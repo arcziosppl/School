@@ -32,6 +32,9 @@ public:
     void TakeTheShotPc(const std::vector<int>& arr);
     void ShipsGenerate();
     void ShipsGeneratePlayerH();
+    bool checkShipsPc() const;
+    bool checkShipsPlayer() const;
+    int GameWin();
     std::vector<std::vector<char>> matrix;
     std::vector<std::vector<char>> matrix_hidden;
     std::vector<std::vector<char>> matrix_player_h;

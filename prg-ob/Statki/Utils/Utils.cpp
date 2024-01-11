@@ -51,6 +51,7 @@ std::cout<<"   ~^^^^ ~~~~^^~~~~^^~~^^~~~~~"<<'\n'<<'\t';
 std::cout<<"     ~~^^      ~^^~     ~^~ ~^ ~^"<<'\n'<<'\t';
 std::cout<<"          ~^~~        ~~~^^~"<<'\n'<<'\t';
 std::cout<<'\n';
+    std::cout<<"Witaj, Twoja flota została wygenerwoana automatycznie"<<'\n';
 }
 
 void Utils::SaveToTxt(std::vector<std::vector<char>> matrix, int d) {

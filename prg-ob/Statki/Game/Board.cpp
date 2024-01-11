@@ -22,6 +22,7 @@ void Board::init() {
     matrix_hidden_player_h.resize(this->config.d, std::vector<char>(this->config.d, this->empty_board_symbol));
 }
 
+
 void Board::print_board() const{
     for (int i = 0; i < config.d; ++i) {
         std::cout<<'\t'<<column_name[i];
@@ -180,6 +181,40 @@ void Board::TakeTheShotPc(const std::vector<int>& arr) {
         player_ships_number--;
     }
 }
+
+bool Board::checkShipsPc() const {
+    if(enemy_ships_number == 0) {
+        return true;
+    }else {
+        return false;
+    }
+}
+
+bool Board::checkShipsPlayer() const {
+    if(player_ships_number == 0) {
+        return true;
+    }else {
+        return false;
+    }
+}
+
+int Board::GameWin() {
+    /*
+     * 0 -> Gra trwa dalej
+     * 1 -> Komputer wygrywa
+     * 2 -> Gracz wygrywa
+     */
+    if(player_ships_number != 0 && enemy_ships_number != 0) {
+        return 0;
+    }else if(player_ships_number == 0 && enemy_ships_number != 0) {
+        return 1;
+    }else {
+        return 2;
+    }
+}
+
+
+
 
 
 
