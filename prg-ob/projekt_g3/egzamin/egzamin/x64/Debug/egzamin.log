@@ -1,0 +1,25 @@
+﻿  CppCLR_WinFormsProject.cpp
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(288,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(309,51): warning C4244: "argument": konwersja z "wchar_t" do "_Ty", możliwa utrata danych
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(309,51): warning C4244:         with
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(309,51): warning C4244:         [
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(309,51): warning C4244:             _Ty=char
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(309,51): warning C4244:         ]
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(316,55): warning C4244: "argument": konwersja z "wchar_t" do "_Ty", możliwa utrata danych
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(316,55): warning C4244:         with
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(316,55): warning C4244:         [
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(316,55): warning C4244:             _Ty=char
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(316,55): warning C4244:         ]
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(324,47): warning C4244: "argument": konwersja z "wchar_t" do "_Ty", możliwa utrata danych
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(324,47): warning C4244:         with
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(324,47): warning C4244:         [
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(324,47): warning C4244:             _Ty=char
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(324,47): warning C4244:         ]
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(333,62): warning C4244: "argument": konwersja z "wchar_t" do "_Ty", możliwa utrata danych
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(333,62): warning C4244:         with
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(333,62): warning C4244:         [
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(333,62): warning C4244:             _Ty=char
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(333,62): warning C4244:         ]
+C:\Users\recke\source\repos\egzamin\egzamin\Form1.h(296,26): warning C4101: "e": lokalna zmienna, do której nie istnieje odwołanie
+  AssemblyInfo.obj : napotkano moduł MSIL; konsolidowanie przyrostowe jest wyłączone dla modułów MSIL; zostanie wykonana pełna konsolidacja
+  egzamin.vcxproj -> C:\Users\recke\source\repos\egzamin\x64\Debug\egzamin.exe

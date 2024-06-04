@@ -1,0 +1,3 @@
+C:\Users\recke\source\repos\egzamin\egzamin\x64\Debug\egzamin.vcxproj.AssemblyReference.cache
+C:\Users\recke\source\repos\egzamin\egzamin\x64\Debug\egzamin.Form1.resources
+C:\Users\recke\source\repos\egzamin\egzamin\x64\Debug\egzamin.vcxproj.GenerateResource.cache
